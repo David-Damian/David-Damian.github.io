@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Damian — Data Scientist</title>
+  <meta name="description" content="David Damian — Data Scientist specializing in Machine Learning, AI, and data-driven solutions that enhance people's lives." />
+  <meta name="keywords" content="Data Scientist, Machine Learning, AI, Portfolio, David Damian" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>DD<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="assets/docs/David_Damian_CV.pdf" class="nav-link nav-cta" download>
+            <i class="ph ph-download-simple"></i> CV
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">David Damian</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-static">A&nbsp;</span>
+        <span class="hero-title-typed" id="typedText"></span>
+        <span class="hero-cursor">|</span>
+      </div>
+      <p class="hero-quote">
+        &ldquo;Guided by the belief that, together, we can build better data and AI problem solutions that could enhance people&rsquo;s lives.&rdquo;
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="ph ph-folder-open"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="ph ph-envelope"></i> Get in Touch
+        </a>
+        <a href="assets/docs/David_Damian_CV.pdf" class="btn btn-outline" download>
+          <i class="ph ph-file-pdf"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="mailto:david@example.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down">
+      <i class="ph ph-caret-double-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-number">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-border"></div>
+          <img src="assets/images/profile.jpg" alt="David Damian" class="about-image" id="profileImage" />
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Data Scientist</strong> passionate about turning raw data into actionable intelligence. I specialize in building end-to-end machine learning pipelines, from feature engineering and model training to cloud deployment and monitoring.
+          </p>
+          <p>
+            My work spans <strong>credit risk modeling</strong>, <strong>deep learning</strong> (LSTM, transformers), <strong>classical ML</strong> (XGBoost, LightGBM), and <strong>data engineering</strong> on cloud platforms like AWS and Snowflake. I thrive at the intersection of statistics, software engineering, and business impact.
+          </p>
+          <p>
+            When I'm not wrangling data, you'll find me exploring new research papers, contributing to open-source projects, or mentoring aspiring data scientists.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Models in Production</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-number">02.</span> Skills &amp; Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="ph ph-brain"></i></div>
+          <h3>Machine Learning &amp; AI</h3>
+          <ul class="skill-tags">
+            <li>XGBoost</li><li>LightGBM</li><li>Scikit-learn</li>
+            <li>LSTM / RNN</li><li>Transformers</li><li>PyTorch</li>
+            <li>TensorFlow</li><li>Feature Engineering</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="ph ph-database"></i></div>
+          <h3>Data Engineering</h3>
+          <ul class="skill-tags">
+            <li>SQL</li><li>Snowflake</li><li>Apache Spark</li>
+            <li>Airflow</li><li>dbt</li><li>ETL Pipelines</li>
+            <li>Polars</li><li>Pandas</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="ph ph-cloud"></i></div>
+          <h3>Cloud &amp; MLOps</h3>
+          <ul class="skill-tags">
+            <li>AWS SageMaker</li><li>S3</li><li>Lambda</li>
+            <li>Docker</li><li>CI/CD</li><li>MLflow</li>
+            <li>Git</li><li>Linux</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="ph ph-chart-line-up"></i></div>
+          <h3>Analytics &amp; Visualization</h3>
+          <ul class="skill-tags">
+            <li>Python</li><li>R</li><li>Matplotlib</li>
+            <li>Plotly</li><li>Tableau</li><li>Power BI</li>
+            <li>Statistical Modeling</li><li>A/B Testing</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-number">03.</span> Featured Projects</h2>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="de">Data Engineering</button>
+        <button class="filter-btn" data-filter="viz">Visualization</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-card-image">
+            <img src="assets/images/project_credit_risk.jpg" alt="Credit Risk Scoring" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Credit Risk Scoring Engine</h3>
+            <p>End-to-end ML pipeline for predicting credit default using XGBoost and LSTM embeddings, deployed on AWS SageMaker with real-time scoring API.</p>
+            <ul class="project-tags">
+              <li>XGBoost</li><li>LSTM</li><li>SageMaker</li><li>Snowflake</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-category="de">
+          <div class="project-card-image">
+            <img src="assets/images/project_data_pipeline.jpg" alt="Data Pipeline" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Real-Time Data Pipeline</h3>
+            <p>Streaming ETL pipeline processing 100M+ daily transactions using Apache Spark and Airflow, with automated data quality checks and alerting.</p>
+            <ul class="project-tags">
+              <li>Spark</li><li>Airflow</li><li>S3</li><li>Docker</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-category="ml">
+          <div class="project-card-image">
+            <img src="assets/images/project_nlp.jpg" alt="NLP Sentiment" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>NLP Sentiment Analyzer</h3>
+            <p>Transformer-based sentiment analysis system for customer reviews, achieving 94% accuracy with fine-tuned BERT model and interactive dashboard.</p>
+            <ul class="project-tags">
+              <li>BERT</li><li>PyTorch</li><li>NLP</li><li>FastAPI</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-category="viz">
+          <div class="project-card-image">
+            <img src="assets/images/project_dashboard.jpg" alt="Analytics Dashboard" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Executive Analytics Dashboard</h3>
+            <p>Interactive business intelligence dashboard built with Plotly Dash, providing real-time KPIs, trend analysis, and automated reporting for C-suite executives.</p>
+            <ul class="project-tags">
+              <li>Plotly</li><li>Dash</li><li>SQL</li><li>Python</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal" data-category="de">
+          <div class="project-card-image">
+            <img src="assets/images/project_feature_store.jpg" alt="Feature Store" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>ML Feature Store</h3>
+            <p>Centralized feature store for consistent feature computation across training and inference, reducing model deployment time by 60%.</p>
+            <ul class="project-tags">
+              <li>Polars</li><li>S3</li><li>Snowflake</li><li>MLflow</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal" data-category="viz">
+          <div class="project-card-image">
+            <img src="assets/images/project_geospatial.jpg" alt="Geospatial Analysis" />
+            <div class="project-card-overlay">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="project-link"><i class="ph ph-github-logo"></i></a>
+              <a href="#" class="project-link"><i class="ph ph-arrow-square-out"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3>Geospatial Risk Mapping</h3>
+            <p>Interactive geospatial visualization system for regional risk assessment using clustering algorithms and choropleth maps with drill-down capabilities.</p>
+            <ul class="project-tags">
+              <li>GeoPandas</li><li>Folium</li><li>K-Means</li><li>Python</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-number">04.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — Present</span>
+            <h3>Senior Data Scientist</h3>
+            <h4>Fintech Company</h4>
+            <p>Leading ML initiatives for credit risk modeling. Built LSTM + XGBoost ensembles deployed on SageMaker, reducing default prediction error by 18%. Architect of the team's feature store and MLOps pipeline.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 — 2022</span>
+            <h3>Data Scientist</h3>
+            <h4>Banking &amp; Financial Services</h4>
+            <p>Developed customer segmentation models and automated reporting pipelines. Migrated analytics workflows to Snowflake and AWS, improving processing speed 5×.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2018 — 2020</span>
+            <h3>Junior Data Analyst</h3>
+            <h4>Consulting Firm</h4>
+            <p>Built dashboards and conducted statistical analyses for clients across retail and healthcare. Developed automated ETL processes that saved 20+ hours per week.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-heading reveal"><span class="heading-number">05.</span> Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm always open to discussing new opportunities, interesting projects, or ways we can collaborate on data &amp; AI challenges.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="ph ph-envelope-simple"></i>
+              <a href="mailto:david@example.com">david@example.com</a>
+            </div>
+            <div class="contact-detail-item">
+              <i class="ph ph-map-pin"></i>
+              <span>Mexico City, Mexico</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="ph ph-x-logo"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="formName" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="formSubject" name="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="ph ph-paper-plane-tilt"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-text">
+        Designed &amp; Built by <strong>David Damian</strong> &copy; <span id="footerYear"></span>
+      </p>
+      <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="ph ph-caret-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
