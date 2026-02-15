@@ -11,3 +11,5 @@ Thumbs.db
 # Node (if using serve)
 node_modules/
 package-lock.json
+ActualResume.odt
+ActualResume.pdf
