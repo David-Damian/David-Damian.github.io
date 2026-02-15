@@ -47,7 +47,7 @@
         <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
         <li>
-          <a href="assets/docs/David_Damian_CV.pdf" class="nav-link nav-cta" download>
+          <a href="#" class="nav-link nav-cta" onclick="openCvModal(event)">
             <i class="ph ph-download-simple"></i> CV
           </a>
         </li>
@@ -82,7 +82,7 @@
         <a href="#contact" class="btn btn-outline">
           <i class="ph ph-envelope"></i> Get in Touch
         </a>
-        <a href="assets/docs/David_Damian_CV.pdf" class="btn btn-outline" download>
+        <a href="#" class="btn btn-outline" onclick="openCvModal(event)">
           <i class="ph ph-file-pdf"></i> Download CV
         </a>
       </div>
@@ -414,6 +414,33 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== CV DOWNLOAD MODAL ===================== -->
+  <div class="cv-modal-overlay" id="cvModal">
+    <div class="cv-modal">
+      <button class="cv-modal-close" id="cvModalClose" aria-label="Close">&times;</button>
+      <div class="cv-modal-icon"><i class="ph ph-lock-simple"></i></div>
+      <h3>Request My CV</h3>
+      <p>Please share your details to download my CV.</p>
+      <form id="cvForm">
+        <input type="hidden" name="access_key" value="2a6a54b8-9d4a-4530-9e5a-c9acf6066419">
+        <input type="hidden" name="subject" value="New CV Download Request">
+        <div class="cv-modal-field">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="cv-modal-field">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="cv-modal-field">
+          <input type="text" name="company" placeholder="Company / Role" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="cvSubmitBtn">
+          <i class="ph ph-download-simple"></i> Download CV
+        </button>
+      </form>
+      <p class="cv-modal-note">Your data is only used to track interest. No spam.</p>
+    </div>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">

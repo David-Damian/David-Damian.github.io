@@ -220,3 +220,85 @@
     });
   }
 })();
+
+// ── CV Download Modal (global scope for onclick) ──
+function openCvModal(e) {
+  e.preventDefault();
+  document.getElementById('cvModal').classList.add('active');
+}
+
+function closeCvModal() {
+  document.getElementById('cvModal').classList.remove('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cvModal = document.getElementById('cvModal');
+  const cvModalClose = document.getElementById('cvModalClose');
+  const cvForm = document.getElementById('cvForm');
+
+  // Close on X button
+  if (cvModalClose) cvModalClose.addEventListener('click', closeCvModal);
+
+  // Close on overlay click
+  if (cvModal) {
+    cvModal.addEventListener('click', (e) => {
+      if (e.target === cvModal) closeCvModal();
+    });
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCvModal();
+  });
+
+  // Form submission
+  if (cvForm) {
+    cvForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('cvSubmitBtn');
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<i class="ph ph-spinner"></i> Sending...';
+      btn.disabled = true;
+
+      try {
+        const formData = new FormData(cvForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData,
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          btn.innerHTML = '<i class="ph ph-check-circle"></i> Downloading...';
+
+          // Trigger CV download
+          const link = document.createElement('a');
+          link.href = 'assets/docs/David_Damian_CV.pdf';
+          link.download = 'David_Damian_CV.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          setTimeout(() => {
+            closeCvModal();
+            cvForm.reset();
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+          }, 1500);
+        } else {
+          btn.innerHTML = '<i class="ph ph-warning"></i> Error. Try again.';
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+          }, 2000);
+        }
+      } catch (err) {
+        btn.innerHTML = '<i class="ph ph-warning"></i> Error. Try again.';
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.disabled = false;
+        }, 2000);
+      }
+    });
+  }
+});
