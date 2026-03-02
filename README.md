@@ -43,17 +43,6 @@ portfolio-website/
 - **Fully responsive** — mobile, tablet, desktop
 - **Zero dependencies** — pure HTML, CSS, JavaScript
 
-## 🚀 Deployment
-
-### GitHub Pages
-
-1. Push this repo to GitHub
-2. Go to **Settings → Pages → Source → `main` branch**
-3. Your site will be live at `https://yourusername.github.io/portfolio-website/`
-
-### Netlify / Vercel
-
-Simply connect your GitHub repo — no build step required.
 
 ## 🎨 Customization
 
